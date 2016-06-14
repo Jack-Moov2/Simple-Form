@@ -11,12 +11,15 @@ $max: 100%
 ::-moz-selection
   background: $sharegreen
 
-
 input:focus,
 select:focus,
 textarea:focus,
 button:focus
   outline: none
+
+
+
+
 
 [class*='col-']
   float: left
@@ -45,38 +48,40 @@ html
 *, *::before, *::after
   box-sizing: inherit
 
+
+
+
+
 body
-  display: flex
-  align-items: center
-  justify-content: center
   background: $darkgrey
   font-family: 'Montserrat', sans-serif
 
   form
-    width: 80%
+    width: 100%
+    height: 100%
     margin: 0 auto
-
 
 form section
   padding: 5%
-  height: 70vh
+  height: 100vh
 
   label
     display: block
     padding: 2% 0
 
   button
-    transition: 0.7s ease all
-    background: rgba($sharegreen, 0.4)
+    transition: 0.4s ease all
+    background: rgba($sharegreen, 1)
     border: none
     color: black
     font-weight: 700
     padding: 2.5%
     cursor: pointer
-    margin: 100px 0 0
+    margin: 10% 0 0
 
     &:hover
-      background: rgba($sharegreen,1)
+      background: $darkgrey
+      color: white
 
   input
     transition: 0.2s ease all
@@ -93,20 +98,46 @@ form section
 #logo
   fill: $sharegreen
 
-.grid
+h3
+  margin: 10% 0 0
+  color: $sharegreen
 
 
 .leftside
   background: rgba(black, 0.2)
   text-align: center
+  padding: 12.5% 0
 
   svg
     max-width: 60%
     display: block
     margin: 0 auto
 
+  ul
+    list-style: none
+    padding: 0
+    margin: 10% 0 0
+    height: 10%
+
+    li
+      display: inline-block
+      margin: 0 2.5%
+      width: 10%
+
+      svg
+        max-width: 100%
+        width: 60px
+        height: 60px
+        cursor: pointer
+
 .rightside
   background: white
 
 .rightside__input
   margin: 5% 0
+
+#facebook, #twitter, #google
+  fill: $sharegreen
+
+.f
+  fill: $darkgrey
